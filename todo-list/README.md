@@ -5,6 +5,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
+npm install
+```
+
+```bash
 npm run dev
 # or
 yarn dev
@@ -14,11 +18,19 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Tecnical Decision
+
+File and Component Structure
+To achieve a clear architecture, the project was divided into individual components and organized into modules, leaving the main files properly structured. Maintaining a modular separation allows each component to handle a specific functionality.
+
+Typing with TypeScript
+To prevent errors and improve autocomplete, I defined all types in their respective components, as in the example of Task, where it is imported. This results in coherent code, ensuring that the properties of tasks are always as expected.
 
 ## Learn More
 

@@ -28,6 +28,12 @@
 
 ## Project setup
 
+Remember to have Postgres installed with a dedicated database for this project.
+
+Don't forget to create a `.env` file with your local configurations; we’ve included a sample file, `.env.example` , for reference.
+
+Recomiendo establecer el puerto del backend [http://localhost:3000](http://localhost:3001)
+
 ```bash
 $ npm install
 ```
